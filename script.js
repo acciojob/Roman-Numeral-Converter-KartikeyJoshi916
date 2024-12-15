@@ -8,7 +8,7 @@ function convertToRoman(num) {
 		'XC':90,
 		'L':50,
 		'XL':40,
-		'X':10;
+		'X':10,
 	    'IX':9,
 		'V':5,
 		'IV':4,
@@ -16,7 +16,7 @@ function convertToRoman(num) {
     };
 let roman = "";
 
-    for (let [symbol, value] of symbols) {
+    for (let [symbol, value] of obj) {
         while (num >= value) {
             roman += symbol;
             num -= value;
