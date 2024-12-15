@@ -16,12 +16,12 @@ function convertToRoman(num) {
     };
 let roman = "";
 
-    for (let [symbol, value] of obj) {
-        while (num >= value) {
-            roman += symbol;
-            num -= value;
-        }
+    for (let [symbol, value] of Object.entries(obj)) {
+    while (num >= value) {
+        roman += symbol;
+        num -= value;
     }
+}
 
     return roman;
 }
